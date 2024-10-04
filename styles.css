@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&display=swap');
+
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+
+    --fonte-principal: "Inter";
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.container {
+    height: 100vh;   
+    display: grid;
+    grid-template-columns: 50% 50%; 
+}
+
+.principal {
+    background-image: url("./assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container__caixa {
+    margin: 0 7rem;
+}
+
+.container__titulo {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 2rem 0 4rem 0;
+}
+
+.container__botao {
+    text-decoration: none;
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding: 1rem;
+    color: var(--branco-principal);
+    display: block;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    margin: 1rem 0 0.6rem 0;
+}
+
+.container__aviso {
+    font-size: 0.75rem;
+    color: var(--cinza-secundario);
+}
+
+.explicativo {
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.descricao__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+    padding-right: 2rem;
+}
+
+.botao__terciario {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.terciario_imagem {
+    margin-left: 3rem;
+}
+
+.container__final {
+    text-align: center;
+}
+
+.descricao__titulo {
+    padding: 10rem 0 3rem 0;
+}
+
+.container__final_lista {
+    margin: 0 10rem;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    list-style-type: none;
+}
+
+.descricao_figuras {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.container_footer {
+    margin: 2rem 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.footer_menu {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.footer__aviso {
+    margin: 1.5rem 10rem 3rem 10rem;
+}
